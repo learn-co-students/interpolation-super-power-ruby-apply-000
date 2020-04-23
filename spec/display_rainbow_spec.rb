@@ -7,7 +7,10 @@ describe '#display_rainbow' do
     expect { display_rainbow(colors) }.to_not raise_error(NoMethodError)
     expect { display_rainbow(colors) }.to_not raise_error(ArgumentError)
   end
-
+def display_rainbow(colors)
+  puts "R: #{colors[0]}, O: #{colors[1]}, Y: #{colors[2]}, G: #{colors[3]}, B: #{colors[4]}, I: #{colors[5]}, V: #{colors[6]}"
+end
+  
   it 'prints out the colors of the rainbow correctly when passed in in order' do
     colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
