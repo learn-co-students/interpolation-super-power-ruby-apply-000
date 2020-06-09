@@ -1,4 +1,11 @@
-describe '#display_rainbow' do
+def display_rainbow(colors)
+  
+  display_rainbow ['red', 'orange','yellow','green', 'blue',' indigo','violet']
+  
+  puts "R:#{display_rainbow[0]}, O:#{display_rainbow[1]}, Y:#{display_rainbow[2]}, G:#{display_rainbow[3]} , B:#{display_rainbow[4]} , I:#{display_rainbow[5]}, V:#{display_rainbow[6]}"
+  
+
+  
   it 'accepts one argument' do
     colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
@@ -21,4 +28,5 @@ describe '#display_rainbow' do
 
     expect { display_rainbow(colors) }.to output("R: red, O: orange, Y: yellow, G: green, B: blue, I: indigo, V: violet\n").to_stdout
   end
+
 end
